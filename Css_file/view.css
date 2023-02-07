@@ -1,5 +1,21 @@
 @charset "utf-08";
 
-.front1{
-  background-color: cyan;
+
+.up img, .down img{
+  width: 90vw;
+  height: 90vh;
+  margin: 25px;
+  padding: 25px 200px;
+}
+
+.part1, .part2{
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 678px){
+  .up, .down{
+    width: auto;
+    height: auto;
+  }
 }
