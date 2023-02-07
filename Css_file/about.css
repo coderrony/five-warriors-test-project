@@ -1,1 +1,10 @@
 /* This is css file */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.content {
+    width: 900px;
+}
