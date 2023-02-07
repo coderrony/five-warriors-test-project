@@ -1,3 +1,14 @@
+/* variable */
+:root{ 
+    --primary-color: rgb(255,241,219);
+    --secondary-color: rgba(255,194,247);
+    --padding: 0.5rem;
+    --transition: all 0.3s;
+    --border-radius: 0.6rem;
+    --box-shadow: 0.1rem 0.2rem 0.8rem rgba(205,202,202,0.5);
+}
+
+/* variable */
 * {
     padding: 0;
     margin: 0;
@@ -7,3 +18,65 @@
 .content {
     width: 900px;
 }
+
+.navbar{
+    
+    /*nav bar don't move from postion*/
+    position: sticky;
+    top: 0;
+    left: 0;
+     /*scrl korar smy deka jay*/
+   z-index: 100;  
+}
+/* heading css  start*/
+.heading{
+
+color: rgb(237, 4, 43);
+font-weight: bold;
+font-family: 'Roboto Slab'
+}
+/* heading css  end*/
+/* items  design start */
+.items_img{
+    width:300px;
+    height: 300px;
+}
+.items{
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+    padding: var(--padding);
+}
+.items:hover{
+    box-shadow: 0.1rem 0.2rem 0.8rem rgb(40, 40, 40);
+}
+
+/* cards css  start*/
+#cards{
+    margin-top: 100px;
+    font-family: 'Roboto Slab', serif;
+}
+
+#cards .card h3{
+    color: rgb(15, 238, 189);
+    font-weight: bold;
+}
+
+.btn{
+    width: 140px;
+    height: 40px;
+    border: none ;
+    background-color: transparent;
+    color: #ffc800;
+    border: 1px solid #ffc800 ;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+    transition: 0.5s  ease;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #ffc800;
+    color: white;
+}
+/* cards css end */
+/* items design ends */
